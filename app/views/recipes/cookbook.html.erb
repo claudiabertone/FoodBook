@@ -1,0 +1,10 @@
+<% #Provide the page title in a symbol to application.html.erb to avoid duplication  %>
+<% provide :title, 'Ricettario' %>
+
+<h1>Ricettario</h1>
+<p>
+  <%= render @recipes %>
+</p>
+
+<%= link_to new_recipe_path do %> <%= t(:"Crea una nuova ricetta").html_safe %>
+<% end %> </li>

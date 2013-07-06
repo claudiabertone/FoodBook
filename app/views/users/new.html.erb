@@ -1,0 +1,32 @@
+<% #Provide the page title in a symbol to application.html.erb to avoid duplication %>
+<% provide :title, 'Registrazione' %>
+
+<h1>Registrazione</h1>
+
+<div class="row">
+  <div class="span6 offset3">
+    <%= form_for(@user) do |f| %>
+        <%= render 'shared/error_messages', object: f.object %>
+
+        <%= f.label :name, "Nome" %>
+        <%= f.text_field :name %>
+
+        <%= f.label :surname, "Cognome" %>
+        <%= f.text_field :surname %>
+
+        <%= f.label :age, "Età" %>
+        <%= f.text_field :age %>
+
+        <%= f.label :email %>
+        <%= f.text_field :email %>
+
+        <%= f.label :password %>
+        <%= f.password_field :password %>
+
+        <%= f.label :password_confirmation, 'Ripeti password' %>
+        <%= f.password_field :password_confirmation %>
+
+        <%= f.submit 'Registrati', class: 'btn btn-large btn-primary' %>
+    <% end %>
+  </div>
+</div>

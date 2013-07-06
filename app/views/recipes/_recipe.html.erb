@@ -1,0 +1,15 @@
+<%# partial per visualizzare elenco di ricette  %>
+
+<li>
+  <span class="content"><%= link_to recipe.name, recipe_path(recipe) %></span>
+
+  <span class="timestamp">
+    Posted <%= time_ago_in_words(recipe.created_at) %> ago
+  </span>
+  <% if current_user?(recipe.user) %>
+      | <%= link_to 'cancella', recipe, method: :delete, data: {confirm: 'Sei sicuro?'}, title: recipe.name %>
+      | <%= link_to "modifica ricetta", edit_recipe_path(recipe.id) %>
+  <% end %>
+
+
+

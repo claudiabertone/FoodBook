@@ -1,0 +1,37 @@
+<% #Provide the page title in a symbol to application.html.erb to avoid duplication %>
+<% provide :title, @user.name %>
+
+<div class="row">
+  <aside class="span4">
+    <section>
+      <h1>
+        <%= gravatar_for @user %>
+        <%= @user.name %>
+      </h1>
+    </section>
+    <section>
+      <%= render 'shared/stats' %>
+    </section>
+    <% if current_user.following?(@user) %>
+      <section>
+        <%= link_to 'New message', new_message_path(user: @user.id), role: 'button', class: 'btn btn-info', remote: true %>
+        <div class="message"></div>
+      </section>
+    <% end %>
+  </aside>
+
+  <div class="span8">
+    <%= render 'follow_form' if signed_in? %>
+    <% if @user.posts.any? %>
+      <h3>Posts (<%= @user.posts.count %>)</h3>
+      <ol class="posts">
+        <%= render @posts %>
+      </ol>
+      <% # since we are in a Users view, we need to specify that the pagination is for the posts %>
+      <% will_paginate @posts %>
+    <% end %>
+  </div>
+
+
+
+</div>
