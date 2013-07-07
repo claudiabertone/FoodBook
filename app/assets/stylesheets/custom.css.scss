@@ -20,7 +20,14 @@ html {
 }
 
 body {
-  padding-top: 60px;
+  padding-top: 80px;
+
+  a{
+    color: #c51603;
+  }
+  a:hover{
+    color: #ff4a08;
+  }
 
 
 }
@@ -45,6 +52,7 @@ textarea {
 
 h1, h2, h3, h4, h5, h6 {
   line-height: 1;
+  color: #31302e;
 }
 
 h1 {
@@ -74,7 +82,8 @@ p {
   float: left;
   margin-right: 10px;
   font-size: 1.7em;
-  color: white;
+  color: #e36f08;
+  text-shadow: 3px 0 0  black;
   letter-spacing: -1px;
   padding-top: 9px;
   font-weight: bold;
@@ -84,6 +93,8 @@ p {
     text-decoration: none;
   }
 }
+
+
 
 /* footer */
 
@@ -253,37 +264,30 @@ input {
   @include box_sizing;
 }
 
-
+.navbar-inverse{
 .navbar-inner {
-  background-image: -moz-linear-gradient(top, #c40909, #d30000);
-  background-image: -ms-linear-gradient(top, #c40909, #d30000);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#c40909), to(#d30000));
-  background-image: -webkit-linear-gradient(top, #c40909, #d30000);
-  background-image: -o-linear-gradient(top, #c40909, #d30000);
-  background-image: linear-gradient(top, #c40909, #d30000);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#'c40909, endColorstr='#'d30000, GradientType=0);
+  background: url('foodbook.jpg');
+
+  background-size: 95% 112%;
+  background-repeat: no-repeat;
+
+
+  font: 13px/18px "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-.navbar-inner {
-  .navbar-inner {
-    background-image: -moz-linear-gradient(top, #c40909, #d30000);
-    background-image: -ms-linear-gradient(top, #c40909, #d30000);
-    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#c40909), to(#d30000));
-    background-image: -webkit-linear-gradient(top, #c40909, #d30000);
-    background-image: -o-linear-gradient(top, #c40909, #d30000);
-    background-image: linear-gradient(top, #c40909, #d30000);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#'c40909, endColorstr='#'d30000, GradientType=0);
-  }
 }
 
-.navbar{
-  border: 1px solid black;
-  box-sizing: 50%;
 
+.navbar .nav {
+  position: relative;
+  left: 0;
+  display: block;
+  float: left;
+  margin: 30px 10px 0 0;
 }
 
 .nav > li > a {
-  color: black;
+  color: #000000;
 
 }
 
@@ -308,6 +312,6 @@ input {
 .nav-pills > .active > a,
 .nav-pills > .active > a:hover {
   color: $white;
-  background-color: black;
+  background-color: #c51a03;
 }
 
