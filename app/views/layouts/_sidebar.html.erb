@@ -4,13 +4,13 @@
       <div class="well sidebar-nav-fixed">
         <ul class="nav nav-list">
 
-          <li class="nav-header">CookBook</li>
-          <li class="<%= 'active' if current_page?(root_path) %>"><%=link_to root_path  do %> <i class="icon-home"></i> <%= t(:Home).html_safe %><% end %>  </li>
-          <li class="<%= 'active' if current_page?(homerecipes_path) %>"><%=link_to homerecipes_path do %> <i class="icon-book"></i> <%= t(:Ricette).html_safe %><% end %>  </li>
-          <li class="<%= 'active' if current_page?(cookbook_path) %>"><%=link_to homerecipes_path do %> <i class="icon-calendar"></i> <%= t(:Menù).html_safe %><% end %>  </li>
-          <li class="<%= 'active' if current_page?(followers_user_path(current_user)) %>"><%=link_to followers_user_path(current_user) do %> <i class="icon-star"></i> <%= t(:Followers).html_safe %><% end %>  </li>
-          <li class="<%= 'active' if current_page?(current_user) %>"><%= link_to current_user do %> <i class="icon-user"></i> <%= t(:Profilo).html_safe %><% end %>  </li>
-          <li class="<%= 'active' if current_page?(faq_path) %>"><%= link_to faq_path do %> <i class="icon-info-sign"></i> <%= t(:Info).html_safe %><% end %>  </li>
+
+            <%=link_to image_tag("f_home.png"), root_path%>
+            <%=link_to image_tag("f_ricette.png"), homerecipes_path%>
+            <%=link_to image_tag("f_menu.png"), root_path%>
+            <%=link_to image_tag("f_follow.png"), followers_user_path(current_user)%>
+            <%=link_to image_tag("f_profilo.png"), current_user%>
+            <%=link_to image_tag("f_faq.png"), faq_path%>
 
 
         </ul>
