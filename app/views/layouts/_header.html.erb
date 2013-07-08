@@ -1,12 +1,14 @@
-<header class="navbar navbar-fixed-top navbar-inverse multiple_back">
+<header class="navbar navbar-fixed-top navbar-inverse">
   <div class="navbar-inner">
     <div class="container">
-      <%# link_to "FoodBook", root_path, id: "logo" %>
+
+
       <nav>
         <ul class="nav pull-right">
           <% #link_to is the Rails helper to create links (it generates <a...> tags) %>
           <% if signed_in? %>
-              <li><%= link_to "Utenti", users_path %></li>
+              Benvenuto <%=current_user.name %>
+              <%# link_to "Utenti", users_path %>
               <li id="fat-menu" class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Account <b class="caret"></b></a>
                 <ul class="dropdown-menu">

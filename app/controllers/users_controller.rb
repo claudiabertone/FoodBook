@@ -10,7 +10,7 @@ class UsersController < ApplicationController
   def show
     # get the user with id :id
     @user = User.find(params[:id])
-
+    @recipes = @user.recipes.paginate(page: params[:page])
     # get and paginate the posts associated to the specified user
     @posts = @user.posts.paginate(page: params[:page])
 

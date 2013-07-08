@@ -27,7 +27,7 @@ body {
   background-repeat: no-repeat;
   width: 100%;
   height: 100%;
-  background-position: -80px 590px;
+  background-position: -100px 590px;
   background-attachment: fixed;
 
 
@@ -277,58 +277,37 @@ input {
 
 .navbar-inverse{
 .navbar-inner {
-  background: url('foodbook.jpg');
-
-  background-size: 95% 112%;
+  background: url('CookBook.png');
+  background-size:300px, 40px;
   background-repeat: no-repeat;
 
+  background-position: 110px 0px;
+  background-color: #ffb348;
+  border:1px solid darkred;
 
-  font: 13px/18px "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+
+
 }
 
 }
 
+//link nell'header
+.navbar .nav > li>a {
+  color: black;
+
+}
 
 .navbar .nav {
   position: relative;
   left: 0;
   display: block;
   float: left;
-  margin: 30px 10px 0 0;
+  margin: 0px 0px 0 0;
 }
 
-.nav > li > a {
-  color: #000000;
-
-}
-
-.nav-pills > li {
-  float:none;
-  display:inline-block;
-  *display:inline; /* ie7 fix */
-  zoom:1; /* hasLayout ie7 trigger */
-
-
-}
-
-.nav-pills {
-  margin-left: auto;
-  margin-right: auto;
-
-
-}
-
-
-// Active state
-.nav-pills > .active > a,
-.nav-pills > .active > a:hover {
-  color: $white;
-  background-color: #c51a03;
-}
-
+//sidebar del menù di navigazione del sito
 .sidebar-nav-fixed {
-
-
   position:fixed;
   left:80px;
   top:100px;
@@ -337,7 +316,12 @@ input {
   border-color: white;
 }
 
-.row-fluid > .span-fixed-sidebar {
-  margin-left: 290px;
+//per togliere il pallino alla lista di ricette
+#recipes li{
+    list-style: none;
+}
+
+.nav > .pull-right {
+  background-color: yellow;
 }
 

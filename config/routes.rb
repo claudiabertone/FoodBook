@@ -18,6 +18,8 @@ SWorD::Application.routes.draw do
   match '/searchrecipes', to: 'recipes#search'
   match '/showrecipes', to: 'recipes#show'
   match '/cookbook', to: 'recipes#cookbook'
+  match '/cookbook', to: 'recipes#cookbook'
+
 
   # routes for the Users controller (default plus following, followers and search)
   resources :users do       #nuova route per gestire le risorse messe a disposizione dal modello degli utenti e dal suo controllore. ed route per generare URI legati agli utenti
