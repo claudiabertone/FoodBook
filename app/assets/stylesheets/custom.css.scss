@@ -20,7 +20,16 @@ html {
 }
 
 body {
-  padding-top: 80px;
+  padding-top: 85px;
+
+  background: url('piatto.png');
+  background-size:500px, 600px;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  background-position: -60px 590px;
+  background-attachment: fixed;
+
 
   a{
     color: #c51603;
@@ -315,3 +324,15 @@ input {
   background-color: #c51a03;
 }
 
+.sidebar-nav-fixed {
+
+
+  position:fixed;
+  left:130px;
+  top:100px;
+  width:150px;
+}
+
+.row-fluid > .span-fixed-sidebar {
+  margin-left: 290px;
+}
