@@ -1,10 +1,11 @@
 class Recipe < ActiveRecord::Base
- attr_accessible :name, :piatto, :cucina, :vegetariana, :vegana, :latticini, :glutine, :descrizione
+ attr_accessible :name, :piatto, :cucina, :vegetariana, :vegana, :latticini, :glutine, :descrizione, :ingredients_attributes
 
   belongs_to :user
 
+ has_many :ingredients, dependent: :destroy
   # default_scope order: 'recipes.created_at DESC'
-
+  accepts_nested_attributes_for :ingredients
   validates :user_id, presence: true
 
   validates :name, presence: true
@@ -13,21 +14,6 @@ class Recipe < ActiveRecord::Base
 
   validates :descrizione, presence: true
   default_scope order: 'recipes.created_at DESC'
-
-#def self.search(search)
-   #if search
-    # find(:all, :conditions => ['name LIKE ?', "%#{search}%"])
-   #else
-    #scoped
-   #end
- #end
-
- #def self.search(name)
- #  recipes = order(:name)
- #  recipes = recipes.where("name like ?", "%#{name}%") if name.present?
- # recipes
- #end
-
 
 
   def self.search(search)

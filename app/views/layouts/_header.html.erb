@@ -7,10 +7,10 @@
         <ul class="nav pull-right">
           <% #link_to is the Rails helper to create links (it generates <a...> tags) %>
           <% if signed_in? %>
-              Benvenuto <%=current_user.name %>
-              <%# link_to "Utenti", users_path %>
+
+              <li><%# link_to "Utenti", users_path %> </li>
               <li id="fat-menu" class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Account <b class="caret"></b></a>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Benvenuto <%=current_user.name %> <b class="caret"></b></a>
                 <ul class="dropdown-menu">
 
                   <li><%= link_to "Profilo", current_user %></li>

@@ -1,7 +1,7 @@
 <% #Provide the page title in a symbol to application.html.erb to avoid duplication %>
-<% provide :title, 'Edit user' %>
+<% provide :title, 'Modifica profilo' %>
 
-<h1>Update your profile</h1>
+<h1>Modifica il tuo profilo</h1>
 
 <div class="row">
   <div class="span6 offset3">
@@ -24,6 +24,6 @@
     <% end %>
 
     <%= gravatar_for @user %>
-    <a href="http://gravatar.com/emails">Change</a>  <%# permette di cambiare l'immagine del profilo con gravatar %>
+    <a href="http://gravatar.com/emails">Cambia immagine del profilo</a>  <%# permette di cambiare l'immagine del profilo con gravatar %>
   </div>
 </div>

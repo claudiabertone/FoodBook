@@ -29,7 +29,7 @@ body {
   height: 100%;
   background-position: -100px 590px;
   background-attachment: fixed;
-
+  background-color: #ffe6a2;
 
   a{
     color: #c51603;
@@ -285,11 +285,17 @@ input {
   background-color: #ffb348;
   border:1px solid darkred;
 
-
-
-
 }
 
+}
+//.dropdown-toggle, .nav > .open.active > a: {
+//  background-color: #c51603;
+//  border-color: #f89800;
+//}
+.dropdown-toggle:active, .open .dropdown-toggle {background: #ffb348 !important; color:#000 !important;}
+
+.dropdown-menu{
+  background-color: #ffb348;
 }
 
 //link nell'header
@@ -303,7 +309,7 @@ input {
   left: 0;
   display: block;
   float: left;
-  margin: 0px 0px 0 0;
+  margin: 20px 0px 0 0;
 }
 
 //sidebar del menù di navigazione del sito
@@ -312,8 +318,9 @@ input {
   left:80px;
   top:100px;
   width:160px;
-  background-color: white;
-  border-color: white;
+
+  border-color: #ffe6a2;
+  background-color: #ffe6a2;
 }
 
 //per togliere il pallino alla lista di ricette
@@ -321,7 +328,13 @@ input {
     list-style: none;
 }
 
-.nav > .pull-right {
-  background-color: yellow;
+#benvenuto{
+  padding-top: 11px;
+  color: darkred;
+
+
 }
 
+.dropdown-toggle>a{
+  color: darkred;
+}

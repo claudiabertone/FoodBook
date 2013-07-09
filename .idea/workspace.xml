@@ -4,27 +4,27 @@
     <list default="true" id="b3196c60-1e7e-4222-bb9e-e4cf30748fde" name="Default" comment="" />
     <ignored path="foodbook_6_06.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/_header.html.erb" changelist="b3196c60-1e7e-4222-bb9e-e4cf30748fde" time="1373323936828" ignored="false" />
+    <file path="/_header.html.erb" changelist="b3196c60-1e7e-4222-bb9e-e4cf30748fde" time="1373369280898" ignored="false" />
     <file path="/_search_form.html.erb" changelist="b3196c60-1e7e-4222-bb9e-e4cf30748fde" time="1373102229325" ignored="false" />
     <file path="/search.html.erb" changelist="b3196c60-1e7e-4222-bb9e-e4cf30748fde" time="1373104400638" ignored="false" />
-    <file path="/recipes_controller.rb" changelist="b3196c60-1e7e-4222-bb9e-e4cf30748fde" time="1373322634274" ignored="false" />
+    <file path="/recipes_controller.rb" changelist="b3196c60-1e7e-4222-bb9e-e4cf30748fde" time="1373371587272" ignored="false" />
     <file path="/pages_controller.rb" changelist="b3196c60-1e7e-4222-bb9e-e4cf30748fde" time="1373102871835" ignored="false" />
-    <file path="/home.html.erb" changelist="b3196c60-1e7e-4222-bb9e-e4cf30748fde" time="1373322711329" ignored="false" />
+    <file path="/home.html.erb" changelist="b3196c60-1e7e-4222-bb9e-e4cf30748fde" time="1373370340172" ignored="false" />
     <file path="/_search.html.erb" changelist="b3196c60-1e7e-4222-bb9e-e4cf30748fde" time="1373104501123" ignored="false" />
-    <file path="/routes.rb" changelist="b3196c60-1e7e-4222-bb9e-e4cf30748fde" time="1373315700545" ignored="false" />
+    <file path="/routes.rb" changelist="b3196c60-1e7e-4222-bb9e-e4cf30748fde" time="1373370513935" ignored="false" />
     <file path="/searches_controller.rb" changelist="b3196c60-1e7e-4222-bb9e-e4cf30748fde" time="1373104036825" ignored="false" />
     <file path="/new.html.erb" changelist="b3196c60-1e7e-4222-bb9e-e4cf30748fde" time="1373121580302" ignored="false" />
     <file path="/show.html.erb" changelist="b3196c60-1e7e-4222-bb9e-e4cf30748fde" time="1373314604878" ignored="false" />
     <file path="/_recipe.html.erb" changelist="b3196c60-1e7e-4222-bb9e-e4cf30748fde" time="1373126015424" ignored="false" />
     <file path="/_navbar.html.erb" changelist="b3196c60-1e7e-4222-bb9e-e4cf30748fde" time="1373133136389" ignored="false" />
-    <file path="/recipe.rb" changelist="b3196c60-1e7e-4222-bb9e-e4cf30748fde" time="1373108877206" ignored="false" />
-    <file path="/Ruby Console" changelist="b3196c60-1e7e-4222-bb9e-e4cf30748fde" time="1373109287384" ignored="false" />
+    <file path="/recipe.rb" changelist="b3196c60-1e7e-4222-bb9e-e4cf30748fde" time="1373371682946" ignored="false" />
+    <file path="/Ruby Console" changelist="b3196c60-1e7e-4222-bb9e-e4cf30748fde" time="1373371783942" ignored="false" />
     <file path="/_error_messages.html.erb" changelist="b3196c60-1e7e-4222-bb9e-e4cf30748fde" time="1373109380439" ignored="false" />
     <file path="/recipes_helper.rb" changelist="b3196c60-1e7e-4222-bb9e-e4cf30748fde" time="1373111858558" ignored="false" />
-    <file path="/edit.html.erb" changelist="b3196c60-1e7e-4222-bb9e-e4cf30748fde" time="1373125085643" ignored="false" />
-    <file path="/custom.css.scss" changelist="b3196c60-1e7e-4222-bb9e-e4cf30748fde" time="1373323766300" ignored="false" />
-    <file path="/_navbar.scss" changelist="b3196c60-1e7e-4222-bb9e-e4cf30748fde" time="1373206914108" ignored="false" />
-    <file path="/application.html.erb" changelist="b3196c60-1e7e-4222-bb9e-e4cf30748fde" time="1373287013686" ignored="false" />
+    <file path="/edit.html.erb" changelist="b3196c60-1e7e-4222-bb9e-e4cf30748fde" time="1373360709178" ignored="false" />
+    <file path="/custom.css.scss" changelist="b3196c60-1e7e-4222-bb9e-e4cf30748fde" time="1373361857885" ignored="false" />
+    <file path="/_navbar.scss" changelist="b3196c60-1e7e-4222-bb9e-e4cf30748fde" time="1373360617279" ignored="false" />
+    <file path="/application.html.erb" changelist="b3196c60-1e7e-4222-bb9e-e4cf30748fde" time="1373361948781" ignored="false" />
     <file path="/_navs.scss" changelist="b3196c60-1e7e-4222-bb9e-e4cf30748fde" time="1373209271710" ignored="false" />
     <file path="$PROJECT_DIR$/../foodbook_7_07/app/assets/stylesheets/custom.css.scss" changelist="b3196c60-1e7e-4222-bb9e-e4cf30748fde" time="1373287038947" ignored="false" />
     <file path="/_sidebar.html.erb" changelist="b3196c60-1e7e-4222-bb9e-e4cf30748fde" time="1373315888223" ignored="false" />
@@ -33,6 +33,14 @@
     <file path="/_message.html.erb" changelist="b3196c60-1e7e-4222-bb9e-e4cf30748fde" time="1373313150714" ignored="false" />
     <file path="/_user_info.html.erb" changelist="b3196c60-1e7e-4222-bb9e-e4cf30748fde" time="1373314535667" ignored="false" />
     <file path="/show_follow.html.erb" changelist="b3196c60-1e7e-4222-bb9e-e4cf30748fde" time="1373314353811" ignored="false" />
+    <file path="/_dropdowns.scss" changelist="b3196c60-1e7e-4222-bb9e-e4cf30748fde" time="1373359911279" ignored="false" />
+    <file path="/Dummy.txt" changelist="b3196c60-1e7e-4222-bb9e-e4cf30748fde" time="1373367468165" ignored="false" />
+    <file path="$PROJECT_DIR$/../foodbook_9_07/db/schema.rb" changelist="b3196c60-1e7e-4222-bb9e-e4cf30748fde" time="1373368617907" ignored="false" />
+    <file path="/20130709105800_create_ingredients.rb" changelist="b3196c60-1e7e-4222-bb9e-e4cf30748fde" time="1373369114442" ignored="false" />
+    <file path="$PROJECT_DIR$/../foodbook_9_07/app/views/layouts/_header.html.erb" changelist="b3196c60-1e7e-4222-bb9e-e4cf30748fde" time="1373369280898" ignored="false" />
+    <file path="$PROJECT_DIR$/../foodbook_9_07/config/routes.rb" changelist="b3196c60-1e7e-4222-bb9e-e4cf30748fde" time="1373369328144" ignored="false" />
+    <file path="/relationship.rb" changelist="b3196c60-1e7e-4222-bb9e-e4cf30748fde" time="1373369444241" ignored="false" />
+    <file path="$PROJECT_DIR$/../foodbook_9_07/app/models/relationship.rb" changelist="b3196c60-1e7e-4222-bb9e-e4cf30748fde" time="1373369444241" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,45 +57,19 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="_navbar.html.erb.old" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/layouts/_navbar.html.erb.old">
+      <file leaf-file-name="routes.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/routes.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
-              <folding>
-                <marker date="1373133172000" expanded="true" signature="102:1127" placeholder="..." />
-                <marker date="1373133172000" expanded="true" signature="185:248" placeholder="do ... end" />
-                <marker date="1373133172000" expanded="true" signature="352:418" placeholder="do ... end" />
-                <marker date="1373133172000" expanded="true" signature="519:586" placeholder="do ... end" />
-                <marker date="1373133172000" expanded="true" signature="724:792" placeholder="do ... end" />
-                <marker date="1373133172000" expanded="true" signature="889:955" placeholder="do ... end" />
-                <marker date="1373133172000" expanded="true" signature="1044:1112" placeholder="do ... end" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_header.html.erb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/layouts/_header.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="53" selection-start="53" selection-end="53" vertical-scroll-proportion="0.0">
+            <state line="26" column="3" selection-start="1125" selection-end="1217" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+      <file leaf-file-name="_sidebar.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/layouts/_sidebar.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="14.375">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="about.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/pages/about.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+            <state line="10" column="12" selection-start="365" selection-end="365" vertical-scroll-proportion="-6.25">
               <folding />
             </state>
           </provider>
@@ -96,52 +78,61 @@
       <file leaf-file-name="home.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/pages/home.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+            <state line="17" column="9" selection-start="433" selection-end="433" vertical-scroll-proportion="-9.375">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_user_info.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/shared/_user_info.html.erb">
+      <file leaf-file-name="20130709105800_create_ingredients.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/db/migrate/20130709105800_create_ingredients.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="32" selection-start="206" selection-end="223" vertical-scroll-proportion="-3.75">
+            <state line="7" column="25" selection-start="207" selection-end="207" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/recipes/home.html.erb">
+      <file leaf-file-name="recipe.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/recipe.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="17" selection-start="1013" selection-end="1013" vertical-scroll-proportion="-17.5">
+            <state line="7" column="44" selection-start="319" selection-end="319" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="custom.css.scss" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss">
+      <file leaf-file-name="application.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="305" column="10" selection-start="4117" selection-end="4117" vertical-scroll-proportion="0.0">
+            <state line="15" column="0" selection-start="419" selection-end="419" vertical-scroll-proportion="-4.375">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_navbar.scss" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/.rvm/gems/ruby-1.9.3-p392/gems/bootstrap-sass-2.1.0.0/vendor/assets/stylesheets/bootstrap/_navbar.scss">
+      <file leaf-file-name="recipes_controller.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/controllers/recipes_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="216" column="13" selection-start="4755" selection-end="4759" vertical-scroll-proportion="-4.4615383">
+            <state line="18" column="7" selection-start="285" selection-end="285" vertical-scroll-proportion="0.6629834">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_navs.scss" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/.rvm/gems/ruby-1.9.3-p392/gems/bootstrap-sass-2.1.0.0/vendor/assets/stylesheets/bootstrap/_navs.scss">
+      <file leaf-file-name="new.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/recipes/new.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="20" selection-start="371" selection-end="391" vertical-scroll-proportion="-3.4615386">
+            <state line="7" column="20" selection-start="221" selection-end="221" vertical-scroll-proportion="3.9166667">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="20130629154324_create_recipes.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/db/migrate/20130629154324_create_recipes.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -154,25 +145,29 @@
       <setting name="OPEN_NEW_TAB" value="false" />
     </FindUsagesManager>
   </component>
+  <component name="GeneratorOptions">
+    <option name="VCS_SHOW_CONFIRMATION" value="true" />
+    <option name="ENVIRONMENT" value="development" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$USER_HOME$/.rvm/gems/ruby-1.9.3-p392/gems/bootstrap-sass-2.1.0.0/vendor/assets/stylesheets/bootstrap/_navs.scss" />
-        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-        <option value="$PROJECT_DIR$/app/controllers/users_controller.rb" />
-        <option value="$PROJECT_DIR$/app/views/users/messages.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/messages/_message.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/users/show_follow.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/shared/_user_info.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/users/show.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/pages/home.html.erb" />
-        <option value="$PROJECT_DIR$/app/models/recipe.rb" />
-        <option value="$PROJECT_DIR$/app/views/layouts/_sidebar.html.erb" />
-        <option value="$PROJECT_DIR$/config/routes.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/recipes_controller.rb" />
-        <option value="$PROJECT_DIR$/app/views/recipes/home.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/users/edit.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/layouts/carousel.html.erb" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/carousel.js" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss" />
-        <option value="$PROJECT_DIR$/app/views/layouts/_header.html.erb" />
+        <option value="$PROJECT_DIR$/app/models/ingredient.rb" />
+        <option value="$PROJECT_DIR$/app/views/recipes/new.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/recipes/_ingredients_form.html.erb" />
+        <option value="$PROJECT_DIR$/app/models/user.rb" />
+        <option value="$PROJECT_DIR$/app/views/users/new.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/pages/home.html.erb" />
+        <option value="$PROJECT_DIR$/config/routes.rb" />
+        <option value="$PROJECT_DIR$/app/views/layouts/_sidebar.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
+        <option value="$PROJECT_DIR$/db/migrate/20130709105800_create_ingredients.rb" />
+        <option value="$PROJECT_DIR$/app/models/recipe.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/recipes_controller.rb" />
       </list>
     </option>
   </component>
@@ -345,6 +340,38 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="foodbook_6_06" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="foodbook_6_06" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="foodbook_6_06" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="db" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="foodbook_6_06" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="foodbook_6_06" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="db" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="migrate" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -623,6 +650,10 @@
               <option name="myItemId" value="assets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="javascripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -653,14 +684,15 @@
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="org.jetbrains.plugins.ruby.settings.RubyIdeSdkConfigurable" />
     <property name="recentsLimit" value="5" />
+    <property name="options.lastSelected" value="org.jetbrains.plugins.ruby.settings.RubyIdeSdkConfigurable" />
     <property name="last_opened_file_path" value="$USER_HOME$/Downloads/LabDrag&amp;drop" />
     <property name="FullScreen" value="false" />
     <property name="RakeTaksPopup.undocumentedIncluded" value="false" />
-    <property name="dynamic.classpath" value="false" />
-    <property name="options.searchVisible" value="true" />
+    <property name="RailsGeneratorsPopup.hiddenIncluded" value="false" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
+    <property name="dynamic.classpath" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -674,7 +706,117 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Rails.Development: foodbook_6_06">
+  <component name="RunManager" selected="IRB console.Rails console: foodbook_6_06">
+    <configuration default="false" name="db:populate" type="RakeRunConfigurationType" factoryName="Rake" temporary="true">
+      <module name="foodbook_6_06" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$PROJECT_DIR$" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs />
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_NAME" VALUE="db:populate" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ARGS" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ATTACHED_TEST_FRAMEWORKS" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_TRACE" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_DRYRUN" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_PREREQS" VALUE="false" />
+      <RunnerSettings RunnerId="RubyRunner" />
+      <ConfigurationWrapper RunnerId="RubyRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="db:drop" type="RakeRunConfigurationType" factoryName="Rake" temporary="true">
+      <module name="foodbook_6_06" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$PROJECT_DIR$" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs>
+        <env name="RAILS_ENV" value="development" />
+      </envs>
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_NAME" VALUE="db:drop" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ARGS" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ATTACHED_TEST_FRAMEWORKS" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_TRACE" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_DRYRUN" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_PREREQS" VALUE="false" />
+      <RunnerSettings RunnerId="RubyRunner" />
+      <ConfigurationWrapper RunnerId="RubyRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="db:migrate" type="RakeRunConfigurationType" factoryName="Rake" temporary="true">
+      <module name="foodbook_6_06" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$PROJECT_DIR$" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs>
+        <env name="RAILS_ENV" value="development" />
+      </envs>
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_NAME" VALUE="db:migrate" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ARGS" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ATTACHED_TEST_FRAMEWORKS" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_TRACE" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_DRYRUN" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_PREREQS" VALUE="false" />
+      <RunnerSettings RunnerId="RubyRunner" />
+      <ConfigurationWrapper RunnerId="RubyRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="db:create" type="RakeRunConfigurationType" factoryName="Rake" temporary="true">
+      <module name="foodbook_6_06" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$PROJECT_DIR$" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs>
+        <env name="RAILS_ENV" value="development" />
+      </envs>
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_NAME" VALUE="db:create" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ARGS" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ATTACHED_TEST_FRAMEWORKS" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_TRACE" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_DRYRUN" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_PREREQS" VALUE="false" />
+      <RunnerSettings RunnerId="RubyRunner" />
+      <ConfigurationWrapper RunnerId="RubyRunner" />
+      <method />
+    </configuration>
     <configuration default="false" name="Rails console: foodbook_6_06" type="IrbRunConfigurationType" factoryName="IRB console" temporary="true">
       <module name="foodbook_6_06" />
       <IRB_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
@@ -694,32 +836,6 @@
       <IRB_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="$PROJECT_DIR$/script/rails" />
       <IRB_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="console" />
       <IRB_RUN_CONFIG NAME="IS_RAILS_CONSOLE" VALUE="true" />
-      <RunnerSettings RunnerId="RubyRunner" />
-      <ConfigurationWrapper RunnerId="RubyRunner" />
-      <method />
-    </configuration>
-    <configuration default="false" name="routes" type="RakeRunConfigurationType" factoryName="Rake" temporary="true">
-      <module name="foodbook_6_06" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$PROJECT_DIR$" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
-      <envs />
-      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
-      <EXTENSION ID="JRubyRunConfigurationExtension" />
-      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
-        <COVERAGE_PATTERN ENABLED="true">
-          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
-        </COVERAGE_PATTERN>
-      </EXTENSION>
-      <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_NAME" VALUE="routes" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ARGS" VALUE="" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ATTACHED_TEST_FRAMEWORKS" VALUE="" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_TRACE" VALUE="false" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_DRYRUN" VALUE="false" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_PREREQS" VALUE="false" />
       <RunnerSettings RunnerId="RubyRunner" />
       <ConfigurationWrapper RunnerId="RubyRunner" />
       <method />
@@ -988,18 +1104,24 @@
       <ConfigurationWrapper RunnerId="RubyRunner" />
       <method />
     </configuration>
-    <list size="6">
+    <list size="9">
       <item index="0" class="java.lang.String" itemvalue="Rake.test" />
       <item index="1" class="java.lang.String" itemvalue="Rake.spec" />
       <item index="2" class="java.lang.String" itemvalue="Rails.Production: foodbook_6_06" />
       <item index="3" class="java.lang.String" itemvalue="Rails.Development: foodbook_6_06" />
-      <item index="4" class="java.lang.String" itemvalue="IRB console.Rails console: foodbook_6_06" />
-      <item index="5" class="java.lang.String" itemvalue="Rake.routes" />
+      <item index="4" class="java.lang.String" itemvalue="Rake.db:populate" />
+      <item index="5" class="java.lang.String" itemvalue="Rake.db:drop" />
+      <item index="6" class="java.lang.String" itemvalue="Rake.db:migrate" />
+      <item index="7" class="java.lang.String" itemvalue="Rake.db:create" />
+      <item index="8" class="java.lang.String" itemvalue="IRB console.Rails console: foodbook_6_06" />
     </list>
     <recent_temporary>
-      <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="Rake.routes" />
-        <item index="1" class="java.lang.String" itemvalue="IRB console.Rails console: foodbook_6_06" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="IRB console.Rails console: foodbook_6_06" />
+        <item index="1" class="java.lang.String" itemvalue="Rake.db:populate" />
+        <item index="2" class="java.lang.String" itemvalue="Rake.db:migrate" />
+        <item index="3" class="java.lang.String" itemvalue="Rake.db:create" />
+        <item index="4" class="java.lang.String" itemvalue="Rake.db:drop" />
       </list>
     </recent_temporary>
   </component>
@@ -1032,18 +1154,18 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1680" height="944" extended-state="6" />
+    <frame x="0" y="22" width="1680" height="944" extended-state="7" />
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.35679314" sideWeight="0.501771" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.37148103" sideWeight="0.5029516" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.49822906" sideWeight="0.99855596" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4970484" sideWeight="0.99855596" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1108,95 +1230,47 @@
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/_sidebar.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="61" selection-start="174" selection-end="222" vertical-scroll-proportion="-4.375">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/recipes/cookbook.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/users/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/posts_controller.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/users/show_follow.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/users/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="29" selection-start="731" selection-end="731" vertical-scroll-proportion="-8.125">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="35" selection-start="665" selection-end="696" vertical-scroll-proportion="0.0">
+        <state line="81" column="33" selection-start="3185" selection-end="3185" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/recipes_controller.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/recipes/_ingredients_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="37" selection-start="105" selection-end="105" vertical-scroll-proportion="0.0">
+        <state line="8" column="4" selection-start="226" selection-end="226" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/recipes/home.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="17" selection-start="1013" selection-end="1013" vertical-scroll-proportion="-17.5">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/_navbar.html.erb.old">
-      <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding>
-            <marker date="1373133172000" expanded="true" signature="102:1127" placeholder="..." />
-            <marker date="1373133172000" expanded="true" signature="185:248" placeholder="do ... end" />
-            <marker date="1373133172000" expanded="true" signature="352:418" placeholder="do ... end" />
-            <marker date="1373133172000" expanded="true" signature="519:586" placeholder="do ... end" />
-            <marker date="1373133172000" expanded="true" signature="724:792" placeholder="do ... end" />
-            <marker date="1373133172000" expanded="true" signature="889:955" placeholder="do ... end" />
-            <marker date="1373133172000" expanded="true" signature="1044:1112" placeholder="do ... end" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.rvm/gems/ruby-1.9.3-p392/gems/bootstrap-sass-2.1.0.0/vendor/assets/stylesheets/bootstrap/_navs.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="20" selection-start="371" selection-end="391" vertical-scroll-proportion="-3.4615386">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.rvm/gems/ruby-1.9.3-p392/gems/bootstrap-sass-2.1.0.0/vendor/assets/stylesheets/bootstrap/_navbar.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="216" column="13" selection-start="4755" selection-end="4759" vertical-scroll-proportion="-4.4615383">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="14.375">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/pages/about.html.erb">
+    <entry file="file://$PROJECT_DIR$/db/migrate/20130705093948_create_searches.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
@@ -1205,28 +1279,70 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/pages/home.html.erb">
       <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="9" selection-start="433" selection-end="433" vertical-scroll-proportion="-9.375">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="3" selection-start="1125" selection-end="1217" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/_sidebar.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="12" selection-start="365" selection-end="365" vertical-scroll-proportion="-6.25">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="0" selection-start="419" selection-end="419" vertical-scroll-proportion="-4.375">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20130629154324_create_recipes.rb">
+      <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/shared/_user_info.html.erb">
+    <entry file="file://$PROJECT_DIR$/db/migrate/20130709105800_create_ingredients.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="32" selection-start="206" selection-end="223" vertical-scroll-proportion="-3.75">
+        <state line="7" column="25" selection-start="207" selection-end="207" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss">
+    <entry file="file://$PROJECT_DIR$/app/views/recipes/new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="305" column="10" selection-start="4117" selection-end="4117" vertical-scroll-proportion="0.0">
+        <state line="7" column="20" selection-start="221" selection-end="221" vertical-scroll-proportion="3.9166667">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/_header.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/models/ingredient.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="53" selection-start="53" selection-end="53" vertical-scroll-proportion="0.0">
+        <state line="6" column="8" selection-start="93" selection-end="165" vertical-scroll-proportion="0.24">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/recipe.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="44" selection-start="319" selection-end="319" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/recipes_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="7" selection-start="285" selection-end="285" vertical-scroll-proportion="0.6629834">
           <folding />
         </state>
       </provider>

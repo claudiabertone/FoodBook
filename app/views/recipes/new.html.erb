@@ -1,24 +1,23 @@
 <% #Provide the page title in a symbol to application.html.erb to avoid duplication %>
-<% provide :title, 'Crea ricetta' %>
+<% provide :title, 'New Recipe' %>
 
 <h1>Crea la tua ricetta</h1>
 
 <div class="row">
   <div class="span6 offset3">
-
-    <%= form_for @recipe do |f|  %>
+    <%= form_for @recipe do |f| %>
 
         <%= f.label :name, "Nome" %>
         <%= f.text_field :name %>
 
         <%= f.label :"Tipo di piatto" %>
-        <%= f.select :piatto, [ 'Antipasto', 'Primo', 'Secondo', 'Dolce', 'Altro' ], :id =>"p", :prompt => 'Seleziona un piatto' %>
+        <%= f.select :piatto, [ 'Antipasto', 'Primo', 'Secondo', 'Dolce', 'Altro' ], :id =>"p"%>
 
         <%= f.label :"Tipo di cucina" %>
-        <%= f.select :cucina, [ 'Araba', 'Cinese', 'Italiana', 'Messicana', 'Altro' ], :id =>"c", :prompt => 'Seleziona una cucina' %>
+        <%= f.select :cucina, [ 'Araba', 'Cinese', 'Italiana', 'Messicana', 'Altro' ], :id =>"c"%>
 
         <%= f.label :vegetariana %>
-        <%= f.check_box :vegetariana %>
+        <%= f.check_box :vegetariana%>
 
         <%= f.label :vegana %>
         <%= f.check_box :vegana %>
@@ -29,8 +28,9 @@
         <%= f.label :glutine %>
         <%= f.check_box :glutine %>
 
-
-
+        <%= f.fields_for :ingredients do |builder| %>
+            <%= render "ingredients_form", :f => builder %>
+        <% end %>
 
         <%= f.label :descrizione %>
         <%= f.text_field :descrizione %>
@@ -39,6 +39,4 @@
     <% end %>
 
   </div>
-
 </div>
-

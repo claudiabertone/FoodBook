@@ -18,7 +18,7 @@ SWorD::Application.routes.draw do
   match '/searchrecipes', to: 'recipes#search'
   match '/showrecipes', to: 'recipes#show'
   match '/cookbook', to: 'recipes#cookbook'
-  match '/cookbook', to: 'recipes#cookbook'
+
 
 
   # routes for the Users controller (default plus following, followers and search)

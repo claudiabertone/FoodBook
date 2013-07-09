@@ -11,10 +11,13 @@ class RecipesController < ApplicationController
     @recipe = Recipe.find(params[:id])
   end
 
-  def new
-    # init the user variable to be used in the sign up form
-    @recipe = Recipe.new
-  end
+
+
+    def new
+      #@ingredients = Array.new(6) { Ingredient.new }
+      @recipe = Recipe.new
+      3.times {@recipe.ingredients.build}
+    end
 
 
   def edit
@@ -52,7 +55,7 @@ class RecipesController < ApplicationController
     @recipe = current_user.recipes.new(recipe_params)
     if @recipe.save
 
-      flash[:success] = 'Ricetta registrata!'
+      flash[:success] = 'Ricetta registrata'
 
       redirect_to root_url
     else
@@ -63,9 +66,8 @@ class RecipesController < ApplicationController
 
   private
   def recipe_params
-    params.require(:recipe).permit(:name,:piatto,:cucina, :vegetariana, :vegana, :latticini, :glutine, :descrizione)
+    params.require(:recipe).permit(:name,:piatto,:cucina, :vegetariana, :vegana, :latticini, :glutine, :descrizione, ingredients_attributes: [:id, :ingrediente, :quantit, :tipoquantit])
   end
-
 
 
 
