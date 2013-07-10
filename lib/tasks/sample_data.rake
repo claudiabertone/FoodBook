@@ -6,6 +6,7 @@ namespace :db do
     make_relationships
     make_private_messages
     make_recipes
+    make_ingredients
   end
 end
 
@@ -74,25 +75,33 @@ end
 
 def make_recipes
   # generate 50 fake recipes for the first 10 users
-  users = User.all(limit: 10)
+  users = User.all
   1.times do |n|
-    recipe_name = "Ricetta-#{n+1}"
-    anti = "Antipasto"
-    primo="Primo"
-    secondo="Secondo"
-    dolce="Dolce"
-    altro="Altro"
-    araba = "Araba"
-    cinese="Cinese"
-    italiana= "Italiana"
-    mess="Messicana"
-    altroc="Altro"
-    descrizione = Populator.sentences(2..10)
-    users.each { |user| user.recipes.create!(name: recipe_name, piatto: anti, cucina:araba, descrizione:descrizione)}
-    users.each { |user| user.recipes.create!(name: recipe_name, piatto: primo, cucina:cinese, descrizione:descrizione)}
-    users.each { |user| user.recipes.create!(name: recipe_name, piatto: secondo, cucina:italiana, descrizione:descrizione)}
-    users.each { |user| user.recipes.create!(name: recipe_name, piatto: dolce, cucina:mess, descrizione:descrizione)}
-    users.each { |user| user.recipes.create!(name: recipe_name, piatto: altro, cucina:altroc, descrizione:descrizione)}
+    recipe_name =  Faker::Lorem.sentence(1)
+    piatto = [:antipasto, :primo, :secondo, :dolce, :altro].sample
+    cucina = [:araba, :cinese, :italiana, :messicana, :altro].sample
+    vegetariana=[:true, :false].sample
+    vegana=[:true, :false].sample
+    latticini=[:true, :false].sample
+    glutine=[:true, :false].sample
+
+    descrizione = Faker::Lorem.sentence(8)
+    users.each { |user| user.recipes.create!(name: recipe_name, piatto: piatto, cucina:cucina, vegetariana:vegetariana, vegana:vegana, latticini:latticini, glutine:glutine, descrizione:descrizione)}
+    end
+end
+
+def make_ingredients
+  # generate 50 fake recipes for the first 10 users
+  recipes = Recipe.all
+  1.times do |n|
+    ingrediente= Faker::Lorem.sentence(1)
+    quantit= Random.rand(1...15)
+    tipoquantit=[:grammi, :numero].sample
+
+
+
+    recipes.each { |recipes| recipes.ingredients.create!(ingrediente: ingrediente, quantit: quantit, tipoquantit:tipoquantit)}
+
   end
 end
 

@@ -5,27 +5,39 @@
 
     <div class="row-fluid">
 
-      <div class="span6">
 
-
-
-      </div>
-
-      <div class="span6">
-
+      <div class="span3">
         <h3>Ricette consigliate</h3>
 
         <%= render @recipes_suggested%>
+
+      </div>
+
+
+      <div class="span3">
+
+        <h3>Cuoco consigliato</h3>
+
+        <%= gravatar_cuoco @user %>
 
       </div>
     </div>
 
     <div class="row-fluid">
       <div class="span12">
-        <h3>Ricette recenti</h3>
+        <h3>Menù consigliato</h3>
+        <div class="span10">
+        <%= image_tag("menu.png")%>
+        </div>
+      </div>
+    </div>
 
-        <%= render  @recipes_all%>
-
+    <div class="row-fluid">
+      <div class="span12">
+        <h3>Menù del giorno</h3>
+       <div class="span10">
+        <%= image_tag("menu.png")%>
+       </div>
       </div>
     </div>
 

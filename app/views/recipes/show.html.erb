@@ -24,8 +24,18 @@
             <td>Latticini: <%= check_box_tag 'user', 'is_admin', @recipe.latticini, :disabled => true %> </td>
             <td><%= @recipe.descrizione %></td>
             <p><a href="#" class="btn btn-success">Buy</a> <a href="#" class="btn btn-warning">Try</a></p>
-            <p><%= link_to 'cancella', @recipe, method: :delete, data: {confirm: 'Sei sicuro?'}, title: @recipe %>
-            <%= link_to "modifica", edit_recipe_path(@recipe) %></p>
+
+
+            <% if current_user?(@recipe.user) %>
+
+                <%= link_to "modifica ricetta", edit_recipe_path(@recipe.id) %>
+                <%= link_to 'cancella', @recipe, method: :delete, data: {confirm: 'Sei sicuro?'}, title: @recipe %>
+
+            <% else %>
+
+                <%= link_to "aggiungi al ricettario", recipe_add_path(@recipe.id) %>
+
+            <% end %>
           </div>
 
         </div>

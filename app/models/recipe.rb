@@ -1,5 +1,5 @@
 class Recipe < ActiveRecord::Base
- attr_accessible :name, :piatto, :cucina, :vegetariana, :vegana, :latticini, :glutine, :descrizione, :ingredients_attributes
+ attr_accessible :name, :piatto, :cucina, :vegetariana, :vegana, :latticini, :glutine, :descrizione, :ingredients_attributes, :id, :user_id, :created_at, :updated_at
 
   belongs_to :user
 

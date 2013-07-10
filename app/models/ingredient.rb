@@ -1,5 +1,5 @@
 class Ingredient < ActiveRecord::Base
-  attr_accessible :ingrediente, :quantit, :tipoquantit
+  attr_accessible :ingrediente, :quantit, :tipoquantit, :id, :recipe_id, :created_at, :updated_at
 
   belongs_to :recipe
 

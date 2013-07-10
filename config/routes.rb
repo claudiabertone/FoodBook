@@ -18,7 +18,7 @@ SWorD::Application.routes.draw do
   match '/searchrecipes', to: 'recipes#search'
   match '/showrecipes', to: 'recipes#show'
   match '/cookbook', to: 'recipes#cookbook'
-
+  match '/addrecipes', to: 'recipes#add'
 
 
 
@@ -48,6 +48,7 @@ SWorD::Application.routes.draw do
   resources :messages, only: [:new, :create, :destroy]
 
   resources :recipes  do
+    get :add
     collection do
       get :search
     end

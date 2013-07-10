@@ -2,11 +2,12 @@
 
 
 <ul class="thumbnails">
-<li class="span3">
+
+
         <div class="thumbnail">
-          <%=link_to image_tag("piatto.png") %>
+          <%=link_to image_tag("piatto.png"),recipe_path(recipe) %>
           <div class="caption">
-            <%= link_to recipe.name, recipe_path(recipe) %>
+            <p><%= link_to recipe.name, recipe_path(recipe) %> </p>
             <!--<p><span class="timestamp">-->
                     <!--Posted <%= time_ago_in_words(recipe.created_at) %> ago-->
                 <!--</span></p>-->
@@ -17,8 +18,10 @@
             <!--<% end %>-->
           </div>
         </div>
-      </li>
+
+
     </ul>
+
 
 
 

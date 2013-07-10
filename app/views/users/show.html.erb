@@ -2,7 +2,7 @@
 <% provide :title, @user.name %>
 
 <div class="row-fluid">
-  <aside class="span4">
+  <aside class="span3">
     <section>
       <h1>
         <%= gravatar_for @user %>
@@ -20,7 +20,7 @@
     <% end %>
   </aside>
 
-  <div class="span8">
+  <div class="span9">
     <%# render 'follow_form' if signed_in? %>
     <% if @user.recipes.any? %>
       <h3>Le mie ricette (<%= @user.recipes.count %>)</h3>
