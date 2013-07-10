@@ -5,7 +5,7 @@ namespace :db do
     make_posts
     make_relationships
     make_private_messages
-   # make_recipes
+    make_recipes
   end
 end
 
@@ -72,11 +72,29 @@ def make_private_messages
 end
 
 
-#def make_recipes
+def make_recipes
   # generate 50 fake recipes for the first 10 users
- # users = User.all(limit: 10)
-  #10.times do |n|
-   # recipe_name = "Ricetta-#{n+1}"
-   # users.each { |user| user.recipes.create!(name: recipe_name )}
-  #end
-#end
+  users = User.all(limit: 10)
+  1.times do |n|
+    recipe_name = "Ricetta-#{n+1}"
+    anti = "Antipasto"
+    primo="Primo"
+    secondo="Secondo"
+    dolce="Dolce"
+    altro="Altro"
+    araba = "Araba"
+    cinese="Cinese"
+    italiana= "Italiana"
+    mess="Messicana"
+    altroc="Altro"
+    descrizione = Populator.sentences(2..10)
+    users.each { |user| user.recipes.create!(name: recipe_name, piatto: anti, cucina:araba, descrizione:descrizione)}
+    users.each { |user| user.recipes.create!(name: recipe_name, piatto: primo, cucina:cinese, descrizione:descrizione)}
+    users.each { |user| user.recipes.create!(name: recipe_name, piatto: secondo, cucina:italiana, descrizione:descrizione)}
+    users.each { |user| user.recipes.create!(name: recipe_name, piatto: dolce, cucina:mess, descrizione:descrizione)}
+    users.each { |user| user.recipes.create!(name: recipe_name, piatto: altro, cucina:altroc, descrizione:descrizione)}
+  end
+end
+
+
+

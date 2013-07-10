@@ -1,21 +1,16 @@
-<div class="container-fluid">
-  <div class="row-fluid row">
-    <div class="span3">
-      <div class="well sidebar-nav-fixed">
-        <ul class="nav nav-list">
 
+<div class="well sidebar-nav sidebar-nav-fixed">
+  <ul class="nav nav-list">
 
-            <%=link_to image_tag("f_home.png"), root_path%>
-            <%=link_to image_tag("f_ricette.png"), homerecipes_path%>
-            <%=link_to image_tag("f_menu.png"), root_path%>
-            <%=link_to image_tag("f_follow.png"), followers_user_path(current_user)%>
-            <%=link_to image_tag("f_profilo.png"), current_user%>
-            <%=link_to image_tag("f_posta.png"), messages_user_path(current_user)%>
-            <%=link_to image_tag("f_faq.png"), faq_path%>
-
-
-        </ul>
-      </div><!--/.well -->
-    </div><!--/span-->
-  </div><!--/.well -->
+    <%=link_to image_tag("f_home.png"), root_path%>
+    <%=link_to image_tag("f_ricette.png"), homerecipes_path%>
+    <%=link_to image_tag("f_menu.png"), root_path%>
+    <%=link_to image_tag("f_follow.png"), followers_user_path(current_user)%>
+    <%=link_to image_tag("f_profilo.png"), current_user%>
+    <%=link_to image_tag("f_posta.png"), messages_user_path(current_user)%>
+    <%=link_to image_tag("f_faq.png"), faq_path%>
+  </ul>
+</div><!--/.well -->
 </div><!--/span-->
+
+

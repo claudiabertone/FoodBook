@@ -2,7 +2,9 @@ class RecipesController < ApplicationController
 
 
   def home
-    @recipes = Recipe.all
+
+    @recipes_all = Recipe.first(8)
+    @recipes_suggested=Recipe.first(4)
 
   end
 
@@ -13,11 +15,14 @@ class RecipesController < ApplicationController
 
 
 
+
+
     def new
       #@ingredients = Array.new(6) { Ingredient.new }
       @recipe = Recipe.new
       3.times {@recipe.ingredients.build}
     end
+
 
 
   def edit

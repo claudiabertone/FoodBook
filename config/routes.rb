@@ -21,6 +21,8 @@ SWorD::Application.routes.draw do
 
 
 
+
+
   # routes for the Users controller (default plus following, followers and search)
   resources :users do       #nuova route per gestire le risorse messe a disposizione dal modello degli utenti e dal suo controllore. ed route per generare URI legati agli utenti
     # member: apply the reported actions to each single member (to /users/{:id}, in this case)
@@ -45,7 +47,7 @@ SWorD::Application.routes.draw do
   # default routes for the Messages controller (only create and destroy - other operations will be done via the Users controller)
   resources :messages, only: [:new, :create, :destroy]
 
-  resources :recipes do
+  resources :recipes  do
     collection do
       get :search
     end

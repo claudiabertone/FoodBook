@@ -1,7 +1,7 @@
 <% #Provide the page title in a symbol to application.html.erb to avoid duplication %>
 <% provide :title, @user.name %>
 
-<div class="row">
+<div class="row-fluid">
   <aside class="span4">
     <section>
       <h1>
@@ -9,7 +9,7 @@
         <%= @user.name %>
       </h1>
     </section>
-    <section>
+
       <%# render 'shared/stats' %>
     </section>
     <% if current_user.following?(@user) %>
@@ -23,7 +23,7 @@
   <div class="span8">
     <%# render 'follow_form' if signed_in? %>
     <% if @user.recipes.any? %>
-      <h3>Ricette (<%= @user.recipes.count %>)</h3>
+      <h3>Le mie ricette (<%= @user.recipes.count %>)</h3>
       <ol class="recipes">
         <%= render @recipes %>
       </ol>

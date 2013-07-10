@@ -63,13 +63,18 @@ textarea {
 
 h1, h2, h3, h4, h5, h6 {
   line-height: 1;
-  color: #31302e;
+  color: darkred;
+
 }
 
 h1 {
+
   font-size: 3em;
   letter-spacing: -2px;
   margin-bottom: 30px;
+  text-align: left;
+}
+h3 {
   text-align: left;
 }
 
@@ -312,16 +317,37 @@ input {
   margin: 20px 0px 0 0;
 }
 
+.sidebar-nav {
+
+}
+
+
 //sidebar del menù di navigazione del sito
 .sidebar-nav-fixed {
-  position:fixed;
-  left:80px;
-  top:100px;
-  width:160px;
 
+
+  width:160px;
+  position:fixed;
+
+
+  margin: 0px auto;
   border-color: #ffe6a2;
   background-color: #ffe6a2;
 }
+@media (max-width: 767px) {
+  .sidebar-nav-fixed {
+    width:auto;
+  }
+}
+
+@media (max-width: 979px) {
+  .sidebar-nav-fixed {
+    position:static;
+    width: auto;
+  }
+}
+
+
 
 //per togliere il pallino alla lista di ricette
 #recipes li{
@@ -338,3 +364,87 @@ input {
 .dropdown-toggle>a{
   color: darkred;
 }
+
+
+
+.container-fluid{
+  width: 95%;
+// background-color: red;
+  margin: 0px auto;
+
+}
+
+
+
+
+.span10{
+ // background-color: greenyellow;
+  text-align: center;
+ float: right;
+ width: 85%;
+
+}
+
+.span6{
+  //background-color: deeppink;
+  text-align: center;
+  float: left;
+
+
+
+
+}
+
+.span12{
+ // background-color: blue;
+  text-align: center;
+  padding-top: 3%;
+  padding-left: 5%;
+
+}
+
+.span4{
+  background-color: skyblue;
+  text-align: center;
+  margin: 0px auto;
+  position: relative;
+
+
+}
+
+.span3{
+  margin: 0px auto;
+  text-align: left;
+  //background-color: tan;
+}
+.span5{
+  //background-color: green;
+  text-align: center;
+  margin: 0px auto;
+
+
+
+}
+
+.span8{
+
+    background-color: green;
+    text-align: center;
+    margin: 0px auto;
+
+
+
+
+}
+
+.thumbnail{
+ max-width: 100%;
+  margin: 0px auto;
+  text-align: center;
+}
+
+.thumbnails{
+  display: inline;
+}
+
+
