@@ -10,30 +10,29 @@ namespace :db do
 end
 
 def make_users
-  admin = User.create!(name: "Claudia",  #imposto chi è l'admin
+  admin = User.create!(name: "Claudia", #imposto chi è l'admin
                        surname: "Bertone",
                        email: "claudia@polito.it",
                        password: "claudia",
                        password_confirmation: "claudia",
-                      age: "22")
-  admin.toggle!(:admin)    #toggle! method to flip the admin attribute from false to true. Così tutti gli altri che vengono creati non saranno admin
+                       age: "22")
+  admin.toggle!(:admin) #toggle! method to flip the admin attribute from false to true. Così tutti gli altri che vengono creati non saranno admin
 
-  99.times do |n|   #per 99 volte crea falsi profili
-    name  = Faker::Name.last_name
+  99.times do |n| #per 99 volte crea falsi profili
+    name = Faker::Name.last_name
     surname= Faker::Name.last_name
     # take users from the Rails Tutorial book since most of them have a "real" profile pic
     email = "example-#{n+1}@railstutorial.org"
-    password  = "password"
+    password = "password"
     age =rand(max=70)
     User.create!(name: name,
                  surname: surname,
                  email: email,
                  password: password,
                  password_confirmation: password,
-                  age: age)
+                 age: age)
   end
 end
-
 
 
 def make_relationships
@@ -66,7 +65,7 @@ end
 
 
 def make_recipes
-  @nomericetta = ["Pasta_al_forno","Riso_ai_funghi", "Pasta_al_pesto", "Riso_alla_cantonese", "Panino_al_prosciutto", "Pollo_al_curry", "Pollo_al_latte", "Verdure_grigliate", "Parmigiana", "Tagliatelle_al_ragu", "Filetto_al_pepe_verde", "Fritto_misto_di_mare", "Pizza_margherita", "Tiramisu", "Cheese_cake", "Budino_ai_frutti_di_bosco", "Insalata_di_mare", "Insalata_di_Riso", "Maiale_in_agrodolce", "Fajitas_di_pollo", "Zucchine_ripiene", "Insalata_russa", "Pesce_spada_grigliato", "Sushi"]
+  @nomericetta = ["Pasta_al_forno", "Riso_ai_funghi", "Pasta_al_pesto", "Riso_alla_cantonese", "Panino_al_prosciutto", "Pollo_al_curry", "Pollo_al_latte", "Verdure_grigliate", "Parmigiana", "Tagliatelle_al_ragu", "Filetto_al_pepe_verde", "Fritto_misto_di_mare", "Pizza_margherita", "Tiramisu", "Cheese_cake", "Budino_ai_frutti_di_bosco", "Insalata_di_mare", "Insalata_di_Riso", "Maiale_in_agrodolce", "Fajitas_di_pollo", "Zucchine_ripiene", "Insalata_russa", "Pesce_spada_grigliato", "Sushi"]
   @piatto = ["antipasto", "primo", "secondo", "dolce", "altro"]
   @cucina = ["araba", "cinese", "italiana", "messica", "altro"]
   @vero = [true, false]
@@ -78,19 +77,19 @@ def make_recipes
                                              piatto: @piatto[rand(@piatto.size)], cucina: @cucina[rand(@cucina.size)],
                                              vegetariana: @vero[rand(@vero.size)], vegana: @vero[rand(@vero.size)],
                                              latticini: @vero[rand(@vero.size)], glutine: @vero[rand(@vero.size)],
-                                             descrizione: Faker::Lorem.sentence(8))}
+                                             descrizione: Faker::Lorem.sentence(8)) }
   end
 end
 
 def make_ingredients
   @nomeingrediente = ["pasta", "finocchio", "carote", "cavolo", "Salmone", "Carciofi", "uova", "polenta", "zenzero", "pepe_verde", "acciughe", "trota", "carne_trita", "pasta_integrale", "spaghetti_di_soia", "germogli_di_soia", "salsa_di_soia", "pane", "petto_di_pollo", "maionese", "bresaola", "gorgonzola", "zucchero", "sale", "mortadella", "caramello", "prosciutto", "pollo", "riso", "calamaro", "fagioli", "sugo", "cipolla", "aglio", "pesto", "ceci", "manzo", "costine_di_maiale", "funghi"]
-   @tipo = ["grammi", "numero"]
+  @tipo = ["grammi", "numero"]
 # generate 50 fake recipes for the first 10 users
   recipes = Recipe.all
   3.times do
 
     recipes.each { |recipe| recipe.ingredients.create!(ingrediente: @nomeingrediente[rand(@nomeingrediente.size)],
-                                                       quantit: Random.rand(1...15), tipoquantit:@tipo[rand(@tipo.size)])}
+                                                       quantit: Random.rand(1...15), tipoquantit: @tipo[rand(@tipo.size)]) }
 
   end
 end

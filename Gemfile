@@ -15,7 +15,7 @@ end
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
-  gem 'sass-rails',   '~> 3.2.3'
+  gem 'sass-rails', '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
@@ -45,10 +45,6 @@ gem 'simple-private-messages', '0.0.0', :git => 'https://github.com/jongilbraith
 
 #To save different field of one form into 2 different tables (recipes and ingredients)
 gem 'strong_parameters', '0.2.1'
-
-
-
-
 
 
 # To use Jbuilder templates for JSON

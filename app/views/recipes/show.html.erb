@@ -35,12 +35,12 @@
               </p>
 
               <% if current_user?(@recipe.user) %>
-
+                  <%#se la ricetta è dell'utente loggato allora potrà anche modificare o cancellare la sua ricetta%>
                   <%= link_to "Modifica ricetta", edit_recipe_path(@recipe.id), class: 'btn btn-warning' %>
                   <%= link_to 'Cancella', @recipe, method: :delete, data: {confirm: 'Sei sicuro?'}, title: @recipe, class: 'btn btn-warning' %>
 
               <% else %>
-
+                  <%# permette di aggiungere la ricetta al ricettario se la ricetta è di un altro. Una volta aggiunta al mio ricettario potrò modificarla e le modifiche verranno apportare solo alla mia 'copia' della ricetta non a quella originale%>
                   <%= link_to "Aggiungi al ricettario", recipe_add_path(@recipe.id), class: 'btn btn-warning' %>
 
               <% end %>

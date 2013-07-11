@@ -12,16 +12,8 @@ SWorD::Application.routes.draw do
   # signout should be performed by using the HTTP DELETE request
   match '/signout', to: 'sessions#destroy', via: :delete
   match '/homerecipes', to: 'recipes#home'
-  match '/editrecipes', to:'recipes#edit'
-  match '/viewrecipes', to: 'recipes#viewrecipes'
-  match '/newrecipes', to: 'recipes#new'
-  match '/searchrecipes', to: 'recipes#search'
-  match '/showrecipes', to: 'recipes#show'
   match '/cookbook', to: 'recipes#cookbook'
-  match '/addrecipes', to: 'recipes#add'
   match '/homemenu', to: 'menu#home'
-
-
 
 
   # routes for the Users controller (default plus following, followers and search)
