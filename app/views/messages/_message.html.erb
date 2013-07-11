@@ -9,8 +9,8 @@
     Sent <%= time_ago_in_words(message.created_at) %> ago
   </span>
   <% if current_user?(message.recipient) %>
-    | <%= link_to 'cancella', message, method: :delete, data: { confirm: 'Sei sicuro?' }, title: message.subject %>
-    | <%= link_to 'rispondi', new_message_path(user: message.sender.id, message: message), remote:true %>
+      | <%= link_to 'cancella', message, method: :delete, data: {confirm: 'Sei sicuro?'}, title: message.subject %>
+      | <%= link_to 'rispondi', new_message_path(user: message.sender.id, message: message), remote: true %>
       <div class="message"></div>
   <% end %>
 </li>

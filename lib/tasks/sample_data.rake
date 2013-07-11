@@ -83,9 +83,8 @@ def make_recipes
 end
 
 def make_ingredients
-
-  @nomeingrediente = ["pasta", "finocchio", "carote", "cavolo", "Salmone", "Carciofi", "uova", "polenta", "zenzero", "pepe verde", "acciughe", "trota", "carne trita", "pasta integrale", "spaghetti di soia", "germogli di soia", "salsa di soia", "pane", "petto di pollo", "maionese", "bresaola", "gorgonzola", "zucchero", "sale", "mortadella", "caramello" "prosciutto" "pollo", "riso", "calamaro", "fagioli", "sugo", "cipolla", "aglio", "pesto", "ceci", "manzo", "costine di maiale", "funghi"]
-  @tipo = ["grammi", "numero"]
+  @nomeingrediente = ["pasta", "finocchio", "carote", "cavolo", "Salmone", "Carciofi", "uova", "polenta", "zenzero", "pepe_verde", "acciughe", "trota", "carne_trita", "pasta_integrale", "spaghetti_di_soia", "germogli_di_soia", "salsa_di_soia", "pane", "petto_di_pollo", "maionese", "bresaola", "gorgonzola", "zucchero", "sale", "mortadella", "caramello", "prosciutto", "pollo", "riso", "calamaro", "fagioli", "sugo", "cipolla", "aglio", "pesto", "ceci", "manzo", "costine_di_maiale", "funghi"]
+   @tipo = ["grammi", "numero"]
 # generate 50 fake recipes for the first 10 users
   recipes = Recipe.all
   3.times do

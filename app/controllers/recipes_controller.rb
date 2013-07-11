@@ -116,6 +116,7 @@ ORDER BY count(*) DESC"])
   def show
 # get the recipe with id :id
     @recipe = Recipe.find(params[:id])
+    @ingredient = Ingredient.find_all_by_recipe_id(params[:id])
   end
 
   def new

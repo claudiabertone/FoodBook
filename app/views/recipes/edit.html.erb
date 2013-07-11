@@ -1,4 +1,4 @@
-<% #Provide the page title in a symbol to application.html.erb to avoid duplication %>
+<% #Provide the page title in a symbol to application.html.erb to avoid duplication   %>
 <% provide :title, 'Modifica ricetta' %>
 
 <h1>Modifica la tua ricetta</h1>
@@ -6,18 +6,17 @@
 <div class="row-fluid">
   <div class="span6 offset3">
 
-    <%= form_for @recipe  do |f|  %>
-
+    <%= form_for @recipe do |f| %>
 
 
         <%= f.label :name, "Nome" %>
         <%= f.text_field :name %>
 
         <%= f.label :"Tipo di piatto" %>
-        <%= f.select :piatto, [ 'Antipasto', 'Primo', 'Secondo', 'Dolce', 'Altro' ], :id =>"p", :prompt => 'Seleziona un piatto' %>
+        <%= f.select :piatto, ['Antipasto', 'Primo', 'Secondo', 'Dolce', 'Altro'], :id => "p", :prompt => 'Seleziona un piatto' %>
 
         <%= f.label :"Tipo di cucina" %>
-        <%= f.select :cucina, [ 'Araba', 'Cinese', 'Italiana', 'Messicana', 'Altro' ], :id =>"c", :prompt => 'Seleziona una cucina' %>
+        <%= f.select :cucina, ['Araba', 'Cinese', 'Italiana', 'Messicana', 'Altro'], :id => "c", :prompt => 'Seleziona una cucina' %>
 
         <%= f.label :vegetariana %>
         <%= f.check_box :vegetariana %>
