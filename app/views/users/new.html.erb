@@ -3,7 +3,7 @@
 <html>
 <head>
   <style type="text/css">
-      #div1 {width:350px;height:70px;padding:10px;border:1px solid #aaaaaa;}
+      #div1 {width:150px;height:150px;border:2px solid #0e1574;}
 
   </style>
   <script type="text/javascript">
@@ -30,10 +30,10 @@
   </script>
 </head>
 </body>
-<h1>Registrazione</h1>
+<h1 class="h1center">Registrazione</h1>
 
 <div class="row">
-  <div class="span6 offset3">
+  <div class="span4 offset4">
     <%= form_for(@user) do |f| %>
         <%= render 'shared/error_messages', object: f.object %>
 
@@ -43,8 +43,6 @@
         <%= f.label :surname, "Cognome" %>
         <%= f.text_field :surname %>
 
-        <%= f.label :age, "Età" %>
-        <%= f.text_field :age %>
 
         <%= f.label :email %>
         <%= f.text_field :email %>
@@ -55,16 +53,24 @@
         <%= f.label :password_confirmation, 'Ripeti password' %>
         <%= f.password_field :password_confirmation %>
 
-        <%= f.submit 'Registrati', id: 'submit', disabled: true, class: 'btn btn-large btn-primary' %>
+        <%= f.submit 'Registrati', id: 'submit', disabled: true, class: 'btn btn-large btn-warning' %>
 
     <% end %>
 
     <p>Sposta l'immagine nel rettangolo per poterti registrare</p>
 
-    <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+      <div class="span5">
+        <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+      </div>
+      <div class="span5">
+        <img id="drag1" src="http://www.clker.com/cliparts/Q/N/w/B/S/8/fork-and-knife-light-blue-hi.png"  draggable="true" ondragstart="drag(event)" width="150" height="150">
 
-    <br>
-    <img id="drag1" src="img_logo.gif" draggable="true" ondragstart="drag(event)" width="336" height="69">
+      </div>
+
+
+
+
+
 
     </body>
   </div>

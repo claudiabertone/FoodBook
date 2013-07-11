@@ -1,28 +1,21 @@
 <%# partial per visualizzare elenco di ricette  %>
 
-
 <ul class="thumbnails">
+  <li class="span4 clearfix">
+    <div class="thumbnail clearfix">
+      <%=link_to image_tag("pasta2.jpg"),recipe_path(recipe)  %>
 
+      <div class="caption" class="pull-left">
 
-        <div class="thumbnail">
-          <%=link_to image_tag("piatto.png"),recipe_path(recipe) %>
-          <div class="caption">
-            <p><%= link_to recipe.name, recipe_path(recipe) %> </p>
-            <!--<p><span class="timestamp">-->
-                    <!--Posted <%= time_ago_in_words(recipe.created_at) %> ago-->
-                <!--</span></p>-->
+        <h4>
+          <%= link_to recipe.name, recipe_path(recipe) %> </p>
+        </h4>
 
-            <!--<% if current_user?(recipe.user) %>-->
+      </div>
+    </div>
+  </li>
 
-
-            <!--<% end %>-->
-          </div>
-        </div>
-
-
-    </ul>
-
-
+ </ul>
 
 
 

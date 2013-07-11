@@ -4,13 +4,13 @@
 <div class="container-fluid">
   <div class="row-fluid">
     <div class="span12">
-      <h1>Visualizzazione ricetta </h1>
+      <h1 class="h1center">Visualizzazione ricetta </h1>
 
     </div>
-  </div>
+
   <div class="container">
     <ul class="thumbnails">
-      <li class="span5">
+      <li class="span6 offset3">
         <div class="thumbnail">
             <%=link_to image_tag("piatto.png") %>
           <div class="caption">
@@ -23,17 +23,17 @@
             <td>Glutine: <%= check_box_tag 'user', 'is_admin', @recipe.glutine, :disabled => true %> </td>
             <td>Latticini: <%= check_box_tag 'user', 'is_admin', @recipe.latticini, :disabled => true %> </td>
             <td><%= @recipe.descrizione %></td>
-            <p><a href="#" class="btn btn-success">Buy</a> <a href="#" class="btn btn-warning">Try</a></p>
+
 
 
             <% if current_user?(@recipe.user) %>
 
-                <%= link_to "modifica ricetta", edit_recipe_path(@recipe.id) %>
-                <%= link_to 'cancella', @recipe, method: :delete, data: {confirm: 'Sei sicuro?'}, title: @recipe %>
+                <%= link_to "modifica ricetta", edit_recipe_path(@recipe.id), class: 'btn btn-warning' %>
+                <%= link_to 'cancella', @recipe, method: :delete, data: {confirm: 'Sei sicuro?'}, title: @recipe, class: 'btn btn-warning' %>
 
             <% else %>
 
-                <%= link_to "aggiungi al ricettario", recipe_add_path(@recipe.id) %>
+                <%= link_to "aggiungi al ricettario", recipe_add_path(@recipe.id),class: 'btn btn-warning' %>
 
             <% end %>
           </div>
@@ -42,6 +42,6 @@
       </li>
 
   </ul>
-
+  </div>
 </div>
 </div>

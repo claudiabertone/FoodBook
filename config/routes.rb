@@ -19,6 +19,7 @@ SWorD::Application.routes.draw do
   match '/showrecipes', to: 'recipes#show'
   match '/cookbook', to: 'recipes#cookbook'
   match '/addrecipes', to: 'recipes#add'
+  match '/homemenu', to: 'menu#home'
 
 
 

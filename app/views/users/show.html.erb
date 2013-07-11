@@ -4,10 +4,15 @@
 <div class="row-fluid">
   <aside class="span3">
     <section>
-      <h1>
-        <%= gravatar_for @user %>
-        <%= @user.name %>
-      </h1>
+      <h3>
+        <div class="row-fluid">
+        <%=link_to @user.name %> <hr>
+        </div>
+        <div class="row-fluid">
+
+        <%= gravatar_for(@user, size:300) %>
+        </div>
+      </h3>
     </section>
 
       <%# render 'shared/stats' %>

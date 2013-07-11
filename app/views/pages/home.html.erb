@@ -2,23 +2,34 @@
 <% provide :title, 'Home' %>
 
 <% if signed_in? %>
-
+    <div class="container-fluid">
     <div class="row-fluid">
 
 
-      <div class="span3">
-        <h3>Ricette consigliate</h3>
+      <div class="span4">
 
-        <%= render @recipes_suggested%>
+        <h3>Ricetta del giorno</h3>
+        <%=link_to image_tag("capa.jpg"),recipe_path(@recipes_day)  %>
+        <h4>
+          <%= link_to @recipes_day.name, recipe_path(@recipes_day) %> </p>
+        </h4>
+
 
       </div>
 
+      <div class="span4 offset2">
 
-      <div class="span3">
-
-        <h3>Cuoco consigliato</h3>
-
-        <%= gravatar_cuoco @user %>
+        <h3>Cuoco del giorno</h3>
+        <div class="row-fluid">
+          <div class="span12">
+            <%=link_to gravatar_for(@user, size:300), user_path(@user.id)  %> </br>
+          </div>
+          <div class="span12">
+            <div class="row-fluid">
+              <h5>Nome: <%= link_to @user.name, user_path(@user.id) %></h5>
+            </div>
+          </div>
+        </div>
 
       </div>
     </div>
@@ -44,15 +55,15 @@
 
 
 <% else %>
-    <div class="center hero-unit">
-      <h1>Benvenuto su FoodBook</h1>
-      <%=link_to "Login", signin_path, class: 'btn btn-large btn-primary' %>
-      <%= link_to 'Registrati', signup_path, class: 'btn btn-large btn-primary' %>
-      <%=link_to "Info", faq_path, class: 'btn btn-large btn-primary' %>
+    <%= render 'layouts/carousel' %>
 
-      <h2>
-        Accedi o registrati per iniziare a usare FoodBook
-      </h2>
+    <br><br>
+    <div class="login">
+    <%= link_to 'LOGIN',signin_path,  class: 'btn btn-xlarge btn-warning' %>
+    <%= link_to 'REGISTRAZIONE',signup_path,  class: 'btn btn-xlarge btn-warning' %>
+    <%= link_to 'INFO', faq_path,  class: 'btn btn-xlarge btn-warning' %>
+
+    </div>
 
     </div>
 <% end %>

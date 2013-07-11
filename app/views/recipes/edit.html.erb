@@ -31,7 +31,9 @@
         <%= f.label :glutine %>
         <%= f.check_box :glutine %>
 
-
+        <%= f.fields_for :ingredients do |builder| %>
+            <%= render "ingredients_form", :f => builder %>
+        <% end %>
 
 
         <%= f.label :descrizione %>

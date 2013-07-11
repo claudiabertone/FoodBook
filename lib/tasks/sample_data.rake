@@ -2,7 +2,6 @@ namespace :db do
   desc "Fill database with sample data"
   task populate: :environment do
     make_users
-    make_posts
     make_relationships
     make_private_messages
     make_recipes
@@ -35,14 +34,7 @@ def make_users
   end
 end
 
-def make_posts
-  # generate 50 fake posts for the first 10 users
-  users = User.all(limit: 10)
-  50.times do
-    post_content = Faker::Lorem.sentence(8)
-    users.each { |user| user.posts.create!(content: post_content )}
-  end
-end
+
 
 def make_relationships
   users = User.all
@@ -74,33 +66,32 @@ end
 
 
 def make_recipes
-  # generate 50 fake recipes for the first 10 users
-  users = User.all
-  1.times do |n|
-    recipe_name =  Faker::Lorem.sentence(1)
-    piatto = [:antipasto, :primo, :secondo, :dolce, :altro].sample
-    cucina = [:araba, :cinese, :italiana, :messicana, :altro].sample
-    vegetariana=[:true, :false].sample
-    vegana=[:true, :false].sample
-    latticini=[:true, :false].sample
-    glutine=[:true, :false].sample
+  @nomericetta = ["Pasta_al_forno","Riso_ai_funghi", "Pasta_al_pesto", "Riso_alla_cantonese", "Panino_al_prosciutto", "Pollo_al_curry", "Pollo_al_latte", "Verdure_grigliate", "Parmigiana", "Tagliatelle_al_ragu", "Filetto_al_pepe_verde", "Fritto_misto_di_mare", "Pizza_margherita", "Tiramisu", "Cheese_cake", "Budino_ai_frutti_di_bosco", "Insalata_di_mare", "Insalata_di_Riso", "Maiale_in_agrodolce", "Fajitas_di_pollo", "Zucchine_ripiene", "Insalata_russa", "Pesce_spada_grigliato", "Sushi"]
+  @piatto = ["antipasto", "primo", "secondo", "dolce", "altro"]
+  @cucina = ["araba", "cinese", "italiana", "messica", "altro"]
+  @vero = [true, false]
 
-    descrizione = Faker::Lorem.sentence(8)
-    users.each { |user| user.recipes.create!(name: recipe_name, piatto: piatto, cucina:cucina, vegetariana:vegetariana, vegana:vegana, latticini:latticini, glutine:glutine, descrizione:descrizione)}
-    end
+  users = User.all
+  5.times do
+
+    users.each { |user| user.recipes.create!(name: @nomericetta[rand(@nomericetta.size)],
+                                             piatto: @piatto[rand(@piatto.size)], cucina: @cucina[rand(@cucina.size)],
+                                             vegetariana: @vero[rand(@vero.size)], vegana: @vero[rand(@vero.size)],
+                                             latticini: @vero[rand(@vero.size)], glutine: @vero[rand(@vero.size)],
+                                             descrizione: Faker::Lorem.sentence(8))}
+  end
 end
 
 def make_ingredients
-  # generate 50 fake recipes for the first 10 users
+
+  @nomeingrediente = ["pasta", "finocchio", "carote", "cavolo", "Salmone", "Carciofi", "uova", "polenta", "zenzero", "pepe verde", "acciughe", "trota", "carne trita", "pasta integrale", "spaghetti di soia", "germogli di soia", "salsa di soia", "pane", "petto di pollo", "maionese", "bresaola", "gorgonzola", "zucchero", "sale", "mortadella", "caramello" "prosciutto" "pollo", "riso", "calamaro", "fagioli", "sugo", "cipolla", "aglio", "pesto", "ceci", "manzo", "costine di maiale", "funghi"]
+  @tipo = ["grammi", "numero"]
+# generate 50 fake recipes for the first 10 users
   recipes = Recipe.all
-  1.times do |n|
-    ingrediente= Faker::Lorem.sentence(1)
-    quantit= Random.rand(1...15)
-    tipoquantit=[:grammi, :numero].sample
+  3.times do
 
-
-
-    recipes.each { |recipes| recipes.ingredients.create!(ingrediente: ingrediente, quantit: quantit, tipoquantit:tipoquantit)}
+    recipes.each { |recipe| recipe.ingredients.create!(ingrediente: @nomeingrediente[rand(@nomeingrediente.size)],
+                                                       quantit: Random.rand(1...15), tipoquantit:@tipo[rand(@tipo.size)])}
 
   end
 end

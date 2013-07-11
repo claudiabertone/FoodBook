@@ -32,7 +32,8 @@ body {
   background-color: #ffe6a2;
 
   a{
-    color: #e24f06;
+    color: #4a4a4a;
+    font-weight: bold;
   }
   a:hover{
     color: #670200;
@@ -62,10 +63,14 @@ textarea {
 
 /* typography */
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h6 {
   line-height: 1;
   color: darkred;
 
+}
+h5{
+  color: #4a4a4a;
+  float: left;
 }
 
 h1 {
@@ -75,6 +80,18 @@ h1 {
   margin-bottom: 30px;
   text-align: left;
 }
+
+.h1center{
+  text-align: center;
+
+}
+
+.benvenuto{
+  text-align: center;
+  padding-left: 20%;
+}
+
+
 h3 {
   text-align: left;
 }
@@ -281,45 +298,44 @@ input {
   @include box_sizing;
 }
 
+//header del sito
 .navbar-inverse{
 .navbar-inner {
   background: url('CookBook.png');
-  background-size:300px, 40px;
+  background-size:200px, 20px;
   background-repeat: no-repeat;
 
-  background-position: 110px 0px;
+  background-position: 80px 0px;
   background-color: #ffb348;
   border:1px solid darkred;
 
 }
 
 }
-//.dropdown-toggle, .nav > .open.active > a: {
-//  background-color: #c51603;
-//  border-color: #f89800;
-//}
-.dropdown-toggle:active, .open .dropdown-toggle {background: #ffb348 !important; color:#000 !important;}
+
+//dropdown benvenuto utente nell'header
+.dropdown-toggle:active, .open .dropdown-toggle {background: #ffb348 !important; color:#000 !important; float: right}
 
 .dropdown-menu{
   background-color: #ffb348;
+
 }
 
 //link nell'header
 .navbar .nav > li>a {
-  color: black;
-
+  color: #8b0200;
 }
+.navbar .nav > li>a:hover {
+  color: #4a4449;
+}
+
+
 
 .navbar .nav {
   position: relative;
   left: 0;
   display: block;
   float: left;
-  margin: 20px 0px 0 0;
-}
-
-.sidebar-nav {
-
 }
 
 
@@ -355,18 +371,15 @@ input {
     list-style: none;
 }
 
+//scritta nell'header
 #benvenuto{
   padding-top: 11px;
   color: darkred;
-
-
 }
 
 .dropdown-toggle>a{
   color: darkred;
 }
-
-
 
 .container-fluid{
   width: 95%;
@@ -375,15 +388,12 @@ input {
 
 }
 
-
-
-
 .span10{
- // background-color: greenyellow;
+  //background-color: greenyellow;
   text-align: center;
  float: right;
  width: 85%;
-
+  margin: 0px auto;
 }
 
 .span6{
@@ -391,65 +401,49 @@ input {
   text-align: center;
   float: left;
 
-
-
-
 }
 
 .span12{
  // background-color: blue;
   text-align: center;
   padding-top: 3%;
-
-
 }
 
 .span4{
-  background-color: skyblue;
+  //background-color: skyblue;
   text-align: center;
   margin: 0px auto;
   position: relative;
-
-
 }
 
 .span3{
   margin: 0px auto;
-  text-align: left;
-  //background-color: tan;
+
+ // background-color: tan;
 }
 .span5{
   //background-color: green;
   text-align: center;
   margin: 0px auto;
-
-
-
 }
 
 .span8{
-
-    background-color: green;
+   // background-color: green;
     text-align: center;
     margin: 0px auto;
-
-
-
-
 }
+
+//visualizzazione ricette
 .thumbnail {
   max-width: 100%;
    margin: 0px, auto;
   text-align: center;
   //background-color: yellow;
   border-color:#ffe6a2 ;
-
-
 }
 
 .thumbnail p{
-
-height: 50px;
+  height: 50px;
   overflow: hidden;
 }
 
@@ -458,11 +452,53 @@ height: 50px;
 
 }
 
-.menu{
-  float:left;
+
+
+
+.btn-large{
+  background-color: green;
 }
 
+//bottone grande
+.btn-xxlarge {
+  padding: 10px 15px;
+  margin:10px;
+  font-size: 21px;
+  line-height: normal;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
 
+
+}
+
+//bottone grandissimo per login, registrazione ecc
+.btn-xlarge {
+  padding: 30px 35px;
+  margin:20px;
+  font-size: 22px;
+  line-height: normal;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+
+}
+.login{
+  padding-left: 25%;
+ // background-color: royalblue;
+}
+
+@media (max-width: 767px){
+  .carousel .row .span3 {
+    display: block;
+    float: left;
+    width: 25%;
+    margin-left: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+}
 
 
 

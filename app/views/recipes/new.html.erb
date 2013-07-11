@@ -1,10 +1,10 @@
 <% #Provide the page title in a symbol to application.html.erb to avoid duplication %>
 <% provide :title, 'New Recipe' %>
-
-<h1>Crea la tua ricetta</h1>
+ <div class="container-fluid">
+<h1 class="h1center">Crea la tua ricetta</h1>
 
 <div class="row">
-  <div class="span6 offset3">
+  <div class="span7 offset5">
     <%= form_for @recipe do |f| %>
 
         <%= f.label :name, "Nome" %>
@@ -40,3 +40,4 @@
 
   </div>
 </div>
+ </div>

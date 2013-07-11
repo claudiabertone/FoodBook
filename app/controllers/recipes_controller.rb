@@ -2,7 +2,7 @@ class RecipesController < ApplicationController
 
   def home
     @recipes = Recipe.all
-
+    @recipe_all = Recipe.first(8)
     if Recipe.find_by_user_id(current_user.id) == nil
 #l'utente non ha ricette
 
@@ -61,9 +61,8 @@ ORDER BY count(*) DESC"])
 #esistono cuochi che usano quell'ingrediente
 
 #ne seleziona uno a caso trai primi tre
-        @cook = @cook[rand(3)]
 
-        @cook = User.find(@cook[rand(3)].id)
+        @cook = User.find(@cook[rand(3)].user_id)
       end
 
 #seleziona tutte le righe dove il nome dell'ingrediente è uguale a quello scelto prima
@@ -115,28 +114,21 @@ ORDER BY count(*) DESC"])
   end
 
   def show
-    # get the user with id :id
+# get the recipe with id :id
     @recipe = Recipe.find(params[:id])
   end
 
-
-
-
-
-    def new
-      #@ingredients = Array.new(6) { Ingredient.new }
-      @recipe = Recipe.new
-      3.times {@recipe.ingredients.build}
-    end
-
-
+  def new
+#@ingredients = Array.new(6) { Ingredient.new }
+    @recipe = Recipe.new
+    3.times {@recipe.ingredients.build}
+  end
 
   def edit
 
     @recipe = Recipe.find(params[:id])
 
   end
-
 
   def update
     @recipe = Recipe.find(params[:id])
@@ -148,32 +140,31 @@ ORDER BY count(*) DESC"])
     end
   end
 
-
   def destroy
-    # delete the user starting from her id
+# delete the user starting from her id
     Recipe.find(params[:id]).destroy
     flash[:success] = 'Ricetta cancellata!'
-    redirect_to root_path
+    redirect_to cookbook_path
   end
 
-  #aggiungere ricetta di un altro al mio ricettario
+#aggiungere ricetta di un altro al mio ricettario
   def add
-    #trova la ricetta in base all'id
+#trova la ricetta in base all'id
     @recipe = Recipe.find(params[:recipe_id])
 
-    #trova gli ingredienti associati alla ricetta in ordine ascendente
+#trova gli ingredienti associati alla ricetta in ordine ascendente
     @ingredient = Ingredient.find_by_sql(["SELECT * FROM ingredients WHERE "+params[:recipe_id]+" = recipe_id ORDER BY ingredients.id ASC"])
 
-    #cambia l'id della ricetta prendendo la prossima riga vuota
+#cambia l'id della ricetta prendendo la prossima riga vuota
     @recipe.id = Recipe.maximum('id') + 1
 
-    #cambia il nome della ricetta scrivendoci il nome del creatore
+#cambia il nome della ricetta scrivendoci il nome del creatore
     @recipe.name = @recipe.name + ' (Ricetta di ' + User.find(@recipe.user_id).name + ')'
 
-    #cambio il vecchio user id con quello attuale
+#cambio il vecchio user id con quello attuale
     @recipe.user_id = current_user.id
 
-    #faccio la stessa cosa per gli ingredienti
+#faccio la stessa cosa per gli ingredienti
     count = 0
     3.times{@ingredient[count].id = Ingredient.maximum('id') + 1 + count
     @ingredient[count].recipe_id = @recipe.id
@@ -181,13 +172,12 @@ ORDER BY count(*) DESC"])
     @ingredient[count].save
     count = count + 1}
 
-    #inizializza la ricetta come nuova
+#inizializza la ricetta come nuova
     @recipe = Recipe.new(@recipe.attributes)
     @recipe.save
 
     redirect_to cookbook_path
   end
-
 
   def cookbook
     @recipes = Recipe.find_all_by_user_id(current_user)
@@ -211,22 +201,9 @@ ORDER BY count(*) DESC"])
     params.require(:recipe).permit(:name,:piatto,:cucina, :vegetariana, :vegana, :latticini, :glutine, :descrizione, ingredients_attributes: [:id, :ingrediente, :quantit, :tipoquantit])
   end
 
-
-
-
   def search
     @search = Recipe.search(params[:search])
 
   end
-
-
-
-
-
-
-
-
-
-
 
 end

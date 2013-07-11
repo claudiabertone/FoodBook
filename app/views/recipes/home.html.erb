@@ -1,4 +1,4 @@
-<div class="row-fluid">
+<div class="row-fluid" xmlns="http://www.w3.org/1999/html">
  <div class="row-fluid">
   <div class="span4">
     <h1>Ricette</h1>
@@ -13,28 +13,47 @@
   </div>
 <div class="row-fluid">
 
+      <div class="span4">
+
+        <h3>Ricettario</h3>
+        <%=link_to image_tag("ricettario2.png"), cookbook_path%>
+
+      </div>
+
       <div class="span3">
 
-        <%=link_to image_tag("ricettario.png"), cookbook_path%>
+        <h3>Ricetta del giorno</h3>
+        <%=link_to image_tag("antipasto.jpg"),recipe_path(@advice)  %>
+        <h4>
+          <%= link_to @advice.name, recipe_path(@advice) %> </p>
+        </h4>
+
 
       </div>
 
-      <div class="span9">
+        <div class="span4 offset1">
 
-        <h3>Ricette consigliate</h3>
-        <div class="span3">
-        <%= render @recipes_suggested%>
+            <h3>Cuoco consigliato</h3>
+               <div class="row-fluid">
+                 <div class="span12">
+                   <%= gravatar_for(@cook, size:300) %> </br>
+                 </div>
+                 <div class="span12">
+                 <div class="row-fluid">
+                <h5>Nome: <%= link_to @cook.name, user_path(@cook.id) %></h5>
+                   </div>
+               </div>
+               </div>
         </div>
-      </div>
     </div>
 
     <div class="row-fluid">
       <div class="span12">
 
         <h3>Ricette recenti</h3>
-        <div class="span3">
-          <%= render  @recipes_all%>
-        </div>
+
+          <%= render  @recipe_all%>
+
       </div>
     </div>
 
